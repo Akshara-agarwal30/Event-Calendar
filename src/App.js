@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CalendarGrid from "./components/CalendarGrid";
-import "./App.css"; // Ensure this file is created and includes the styles provided below
+import "./App.css"; 
 
 function App() {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -11,6 +11,7 @@ function App() {
         <CalendarGrid selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
        
       </div>
+      {/*for background animation */}
       <div class="box">
           <div></div>
           <div></div>

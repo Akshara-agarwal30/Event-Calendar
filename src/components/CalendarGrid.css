@@ -1,4 +1,3 @@
-/* General Calendar Styling */
 .calendar {
   width: 100%;
   max-width: 700px;
@@ -22,23 +21,23 @@
 .nav-btn {
   background-color: #007bff;
   color: white;
-  padding: 1rem 2rem; /* Increased padding for larger buttons */
+  padding: 1rem 2rem; 
   border: none;
-  border-radius: 8px; /* Slightly more rounded corners */
+  border-radius: 8px; 
   cursor: pointer;
-  font-size: 1.15rem; /* Larger font size */
+  font-size: 1.15rem; 
   font-weight: bold;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  background-color: #0056b3; 
+  transform: scale(1.1); 
 }
 
 .nav-btn:active {
-  background-color: #003d80; /* Even darker blue on click */
-  transform: scale(0.95); /* Slight compression effect on click */
+  background-color: #003d80; 
+  transform: scale(0.95); 
 }
 
 .calendar-grid {
@@ -75,38 +74,38 @@
   background-color: transparent;
 }
 
-/* Today's Date Styling */
+
 .today {
-  background-color: #62a0e3e9; /* Highlight color */
-  color: #fff; /* Text color for contrast */
-  font-weight: bold; /* Make it stand out */
-  border: 2px solid #0056b3; /* Slightly darker border for better focus */
-  box-shadow: 0 0 10px rgba(96, 143, 193, 0.466); /* Subtle glow effect */
-  border-radius: 12px; /* Extra curvature for the current day */
-  transform: scale(1.05); /* Slight enlargement */
-  transition: all 0.3s ease; /* Smooth transitions for effects */
+  background-color: #62a0e3e9; 
+  color: #fff; 
+  font-weight: bold; 
+  border: 2px solid #0056b3; 
+  box-shadow: 0 0 10px rgba(96, 143, 193, 0.466); 
+  border-radius: 12px; 
+  transform: scale(1.05); 
+  transition: all 0.3s ease; 
 }
 
-/* Weekend and Weekday Styles */
+
 .weekend {
-  background-color: #ffe6e6; /* Light red for weekends */
-  color: #d9534f; /* Text color for weekends */
+  background-color: #ffe6e6; 
+  color: #d9534f; 
   font-weight: bold;
 }
 
 .weekday {
-  background-color: #e6f7ff; /* Light blue for weekdays */
-  color: #0275d8; /* Text color for weekdays */
+  background-color: #e6f7ff; 
+  color: #0275d8; 
 }
 
-/* Modal Styling */
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  background: rgba(0, 0, 0, 0.6); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,28 +114,28 @@
 
 .modal-content {
   background: #fff;
-  padding: 3rem; /* Increased padding */
-  border-radius: 15px; /* More rounded corners */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
-  max-width: 600px; /* Increased max width */
-  width: 95%; /* Keeps responsiveness */
+  padding: 3rem;
+  border-radius: 15px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  max-width: 600px; 
+  width: 95%; 
 }
 
 .modal-content label {
   display: block;
-  margin: 1rem 0; /* Increased spacing */
-  font-size: 1.5rem; /* Larger text size */
-  font-weight: bold; /* Make labels stand out */
+  margin: 1rem 0; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
 }
 
 .modal-content input,
 .modal-content textarea {
   width: 100%;
-  padding: 1rem; /* Larger input field size */
-  margin-top: 0.5rem; /* Adjusted margin */
+  padding: 1rem; 
+  margin-top: 0.5rem; 
   border: 1px solid #ddd;
-  border-radius: 8px; /* More rounded input corners */
-  font-size: 1.5rem; /* Larger text in inputs */
+  border-radius: 8px; 
+  font-size: 1.5rem; 
 }
 
 .modal-content select {
@@ -147,29 +146,29 @@
 }
 
 .modal-content button {
-  margin-right: 1.5rem; /* Increased margin between buttons */
-  padding: 0.75rem 1.5rem; /* Larger button size */
+  margin-right: 1.5rem; 
+  padding: 0.75rem 1.5rem; 
   border: none;
   background-color: #007bff;
   color: #fff;
-  border-radius: 12px; /* More rounded buttons */
+  border-radius: 12px; 
   cursor: pointer;
-  font-size: 1.2rem; /* Larger button text size */
-  font-weight: bold; /* Bold text */
-  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover effects */
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  transition: transform 0.2s ease, background-color 0.2s ease; 
 }
 
 .modal-content button:last-child {
-  background-color: #dc3545; /* Cancel button color */
+  background-color: #dc3545; 
 }
 
 .modal-content button:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  background-color: #0056b3; /* Darker blue for primary button */
+  transform: scale(1.1); 
+  background-color: #0056b3;
 }
 
 .modal-content button:last-child:hover {
-  background-color: #b52a3a; /* Darker red for cancel button */
+  background-color: #b52a3a; 
 }
 
 .modal-content h3 {
@@ -186,24 +185,24 @@
   font-size: 0.85rem;
 }
 
-/* Error Message Styling */
+
 .error {
-  color: #d9534f; /* Error color */
+  color: #d9534f; 
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 .export-buttons button{
   margin-top:  1.5rem; ;
-  margin-right: 1.5rem; /* Increased margin between buttons */
-  padding: 0.75rem 1.5rem; /* Larger button size */
+  margin-right: 1.5rem; 
+  padding: 0.75rem 1.5rem; 
   border: none;
   background-color: #007bff;
   color: #fff;
-  border-radius: 12px; /* More rounded buttons */
+  border-radius: 12px; 
   cursor: pointer;
-  font-size: 1.2rem; /* Larger button text size */
-  font-weight: bold; /* Bold text */
-  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover effects */
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  transition: transform 0.2s ease, background-color 0.2s ease; 
 
 }

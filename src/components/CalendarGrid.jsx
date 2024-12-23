@@ -1,4 +1,3 @@
-// CalendarGrid.jsx
 import React, { useState, useEffect } from "react";
 import "./CalendarGrid.css";
 
@@ -128,7 +127,7 @@ const exportEventsAsJSON = () => {
   const eventsForMonth = {};
   for (const [dateKey, eventList] of Object.entries(events)) {
     const eventDate = new Date(dateKey);
-    // Check if the event belongs to the current month
+    
     if (eventDate.getMonth() === currentDate.getMonth() && eventDate.getFullYear() === currentDate.getFullYear()) {
       eventsForMonth[dateKey] = eventList;
     }
@@ -148,7 +147,7 @@ const exportEventsAsCSV = () => {
 
   for (const [dateKey, eventList] of Object.entries(events)) {
     const eventDate = new Date(dateKey);
-    // Check if the event belongs to the current month
+    
     if (eventDate.getMonth() === currentDate.getMonth() && eventDate.getFullYear() === currentDate.getFullYear()) {
       eventList.forEach((event) => {
         const row = `${eventDate.toDateString()}, ${event.eventName}, ${event.startTime}, ${event.endTime}, ${event.description}, ${event.type}`;

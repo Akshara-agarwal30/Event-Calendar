@@ -14,8 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vw; /* Adjust as needed */
-    width: 100%; /* Keeps the calendar responsive */
+    height: 40vw; 
+    width: 100%; 
 }
 
 .box div{
