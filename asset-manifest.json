@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dynamic-Calendar/static/css/main.d6ab7e01.css",
+    "main.js": "/Dynamic-Calendar/static/js/main.786637a3.js",
+    "static/js/488.9fe3862e.chunk.js": "/Dynamic-Calendar/static/js/488.9fe3862e.chunk.js",
+    "index.html": "/Dynamic-Calendar/index.html",
+    "main.d6ab7e01.css.map": "/Dynamic-Calendar/static/css/main.d6ab7e01.css.map",
+    "main.786637a3.js.map": "/Dynamic-Calendar/static/js/main.786637a3.js.map",
+    "488.9fe3862e.chunk.js.map": "/Dynamic-Calendar/static/js/488.9fe3862e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6ab7e01.css",
+    "static/js/main.786637a3.js"
+  ]
+}
