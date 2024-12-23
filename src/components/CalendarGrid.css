@@ -1,0 +1,209 @@
+/* General Calendar Styling */
+.calendar {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.calendar-header .month-year,
+.calendar-header h2 {
+  font-size: 1.85rem;
+  font-weight: bold;
+}
+
+.nav-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem; /* Increased padding for larger buttons */
+  border: none;
+  border-radius: 8px; /* Slightly more rounded corners */
+  cursor: pointer;
+  font-size: 1.15rem; /* Larger font size */
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.nav-btn:active {
+  background-color: #003d80; /* Even darker blue on click */
+  transform: scale(0.95); /* Slight compression effect on click */
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+
+.calendar-day-label {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.calendar-day {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-day:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.empty {
+  background-color: transparent;
+}
+
+/* Today's Date Styling */
+.today {
+  background-color: #62a0e3e9; /* Highlight color */
+  color: #fff; /* Text color for contrast */
+  font-weight: bold; /* Make it stand out */
+  border: 2px solid #0056b3; /* Slightly darker border for better focus */
+  box-shadow: 0 0 10px rgba(96, 143, 193, 0.466); /* Subtle glow effect */
+  border-radius: 12px; /* Extra curvature for the current day */
+  transform: scale(1.05); /* Slight enlargement */
+  transition: all 0.3s ease; /* Smooth transitions for effects */
+}
+
+/* Weekend and Weekday Styles */
+.weekend {
+  background-color: #ffe6e6; /* Light red for weekends */
+  color: #d9534f; /* Text color for weekends */
+  font-weight: bold;
+}
+
+.weekday {
+  background-color: #e6f7ff; /* Light blue for weekdays */
+  color: #0275d8; /* Text color for weekdays */
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 3rem; /* Increased padding */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  max-width: 600px; /* Increased max width */
+  width: 95%; /* Keeps responsiveness */
+}
+
+.modal-content label {
+  display: block;
+  margin: 1rem 0; /* Increased spacing */
+  font-size: 1.5rem; /* Larger text size */
+  font-weight: bold; /* Make labels stand out */
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 1rem; /* Larger input field size */
+  margin-top: 0.5rem; /* Adjusted margin */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* More rounded input corners */
+  font-size: 1.5rem; /* Larger text in inputs */
+}
+
+.modal-content select {
+  font-size: 1.25rem;
+  border-radius: 8px;
+  margin: 3px;
+  padding: 3px;
+}
+
+.modal-content button {
+  margin-right: 1.5rem; /* Increased margin between buttons */
+  padding: 0.75rem 1.5rem; /* Larger button size */
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px; /* More rounded buttons */
+  cursor: pointer;
+  font-size: 1.2rem; /* Larger button text size */
+  font-weight: bold; /* Bold text */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover effects */
+}
+
+.modal-content button:last-child {
+  background-color: #dc3545; /* Cancel button color */
+}
+
+.modal-content button:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  background-color: #0056b3; /* Darker blue for primary button */
+}
+
+.modal-content button:last-child:hover {
+  background-color: #b52a3a; /* Darker red for cancel button */
+}
+
+.modal-content h3 {
+  font-size: 1.65rem;
+}
+
+.modal-content p,
+.modal-content h4,
+.modal-content li {
+  font-size: 1.5rem;
+}
+
+.modal-content li button {
+  font-size: 0.85rem;
+}
+
+/* Error Message Styling */
+.error {
+  color: #d9534f; /* Error color */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.export-buttons button{
+  margin-top:  1.5rem; ;
+  margin-right: 1.5rem; /* Increased margin between buttons */
+  padding: 0.75rem 1.5rem; /* Larger button size */
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 12px; /* More rounded buttons */
+  cursor: pointer;
+  font-size: 1.2rem; /* Larger button text size */
+  font-weight: bold; /* Bold text */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover effects */
+
+}
