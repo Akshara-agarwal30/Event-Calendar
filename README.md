@@ -60,6 +60,7 @@ This Dynamic Event Calendar Application allows users to manage their events in a
 # Link to Deployed App
 
 You can access the deployed version of the app at the following link:
+https://akshara-agarwal30.github.io/Event-Calendar/
 
 # Technologies Used
 
